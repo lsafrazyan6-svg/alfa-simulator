@@ -1,0 +1,62 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'"><title>Кэшбэк на развлечения · Учебный прототип</title><link rel="stylesheet" href="page-transitions.css"><link rel="stylesheet" href="task-shopping.css?v=uniform-finish-pattern"><link rel="stylesheet" href="eligible-purchase.css"></head><body data-screen="task-balance"><main class="shopping">
+<section class="hero" aria-labelledby="task-title"><header class="task-header"><a class="back" href="tasks.html" aria-label="Назад к заданиям"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m14 5-7 7 7 7" stroke="currentColor" stroke-width="1.7"/></svg></a><p>Задания и&nbsp;награды</p></header><div class="hero-copy"><h1 id="task-title">2,5% кэшбэка<br>на&nbsp;развлечения</h1><p class="intro">Держите от&nbsp;10&nbsp;000&nbsp;₽ на&nbsp;текущих счетах в&nbsp;течение 20&nbsp;дней.</p><p class="deadline"><svg
+        aria-hidden="true"
+        focusable="false"
+        fill="currentColor"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+
+    >
+        <path d="M9 14v-2H7v2h2zm0 2v2H7v-2h2zm4-4h-2v2h2v-2zm-2 4h2v2h-2v-2zm6-2v-2h-2v2h2z" />
+        <path d="M18 2h-2v2H8V2H6v2H3v16a3 3 0 003 3h12a3 3 0 003-3V4h-3V2zm1 4v2H5V6h14zM5 20V10h14v10a1 1 0 01-1 1H6a1 1 0 01-1-1z" />
+    </svg>Выполните до&nbsp;30&nbsp;ноября</p></div><img class="reward" src="assets/b15ca46b6dae60fc875e.png" alt="" aria-hidden="true"></section>
+
+<section class="progress" hidden aria-label="Прогресс задания">
+  <div class="track" role="progressbar" aria-valuemin="0" aria-valuemax="20" aria-valuenow="0" aria-label="Дни с нужным остатком" aria-valuetext="0 из 20 дней">
+    <div class="fill"></div><div class="finish" aria-hidden="true"></div>
+    <span class="percent" aria-hidden="true"><span id="balance-days">0</span><span>из&nbsp;20 дней</span></span>
+  </div>
+</section>
+<section class="conditions" aria-labelledby="conditions-title">
+  <h2 id="conditions-title">Как получить награду</h2>
+  <ol class="steps">
+    <li class="step">
+      <span class="number" aria-hidden="true">1</span>
+      <div class="step-copy">
+        <p class="step-title"><span class="step-before-start">Начните задание</span><span class="step-after-start">Начало задания</span></p>
+        <p><span class="step-before-start">Нажмите «Начать», чтобы участвовать.</span><span class="step-after-start">Вы уже начали задание. Дни с нужным остатком засчитываются в&nbsp;прогресс.</span></p>
+      </div>
+    </li>
+    <li class="step">
+      <span class="number" aria-hidden="true">2</span>
+      <div class="step-copy">
+        <p class="step-title">Держите от&nbsp;10&nbsp;000&nbsp;₽ на&nbsp;текущих счетах</p>
+        <p>Поддерживайте нужный остаток в&nbsp;любые 20&nbsp;дней после старта. Деньги на&nbsp;накопительных, семейных и&nbsp;кредитных счетах, а&nbsp;также на&nbsp;вкладах не&nbsp;учитываются.</p>
+        <p>Можно подключить автопополнение. Прогресс обновляется с&nbsp;задержкой до&nbsp;7&nbsp;дней.</p>
+      </div>
+    </li>
+    <li class="step">
+      <span class="number confetti" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><b>3</b></span>
+      <div class="step-copy">
+        <p class="step-title">Получите 2,5% кэшбэка на&nbsp;развлечения</p>
+        <p>Награда будет действовать в&nbsp;следующем месяце после выполнения задания.</p>
+      </div>
+    </li>
+  </ol>
+</section>
+<aside class="eligible-purchase" aria-labelledby="eligible-purchase-title">
+  <h2 id="eligible-purchase-title">Этот остаток подходит</h2>
+  <div class="balance-example-account">
+    <div class="balance-example-details">
+      <p class="balance-example-name">Текущий счёт</p>
+      <p class="balance-example-amount">12&nbsp;000&nbsp;₽</p>
+    </div>
+    <img src="assets/39a118f94e8c0eaa1716.png" alt="" width="68" height="42">
+  </div>
+</aside>
+<footer class="sticky-action">
+  <button class="action" type="button" id="start-task">Начать</button>
+  <a class="action" id="balance-link" href="index.html" hidden>К&nbsp;счетам</a>
+</footer>
+</main><script src="task-balance.js"></script></body></html>

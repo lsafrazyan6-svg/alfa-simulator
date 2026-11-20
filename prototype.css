@@ -1,0 +1,246 @@
+@import url("page-transitions.css");
+
+/* Original archived styles remain authoritative. Only local preview adjustments. */
+html { -webkit-text-size-adjust:100%; }
+body { margin:0; }
+[data-route]:focus-visible { outline:2px solid #ef3124; outline-offset:3px; }
+@media(prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms!important;transition-duration:.01ms!important; } }
+/* Keep products at their original size behind the movable offers sheet. */
+body[data-screen="home"] .qFbig { transform:none!important; width:100%; }
+/* Saved Swiper tracks need native horizontal scrolling without the bank runtime. */
+.swiper { overflow-x:auto!important; scrollbar-width:none; }
+.swiper:not(.prototype-swiper) > .swiper-wrapper { transform:none!important; }
+.swiper::-webkit-scrollbar { display:none; }
+body[data-screen="home"] .WrpN0 { opacity:1!important; }
+/* Every sheet wrapper fills the available space; only its content scrolls. */
+body[data-screen="home"] .EV7PD { top:0!important; height:100dvh!important; overflow:hidden; pointer-events:none; }
+body[data-screen="home"] .RGWna {
+  top:var(--prototype-sheet-top,476px)!important;
+  bottom:64px!important;
+  height:auto!important;
+  transform:none!important;
+  pointer-events:auto;
+  touch-action:auto;
+  transition:top 1s cubic-bezier(.21,1.29,.25,1.01);
+}
+body[data-screen="home"] .RGWna .rvMcU,
+body[data-screen="home"] .RGWna .cK65V { height:100%; min-height:0; touch-action:auto; }
+body[data-screen="home"] .wzVlA { height:100%!important; max-height:none!important; min-height:0; }
+body[data-screen="home"] .D20jK { flex:1; margin-top:0; height:auto!important; min-height:0; }
+body[data-screen="home"].sheet-dragging .RGWna { transition:none; }
+body[data-screen="home"] .wzVlA > .ohvjj { flex-shrink:0; cursor:grab; min-height:24px; touch-action:none; }
+body[data-screen="home"] .wzVlA > .ohvjj:active { cursor:grabbing; }
+@media(prefers-reduced-motion:reduce) { body[data-screen="home"] .RGWna {transition:none!important;} }
+.swiper { cursor:grab; touch-action:pan-x pan-y; -webkit-overflow-scrolling:touch; }
+.swiper.carousel-dragging { cursor:grabbing; scroll-behavior:auto!important; user-select:none; -webkit-user-select:none; }
+.swiper img { -webkit-user-drag:none; }
+.swiper:focus-visible {outline:2px solid #ef3124;outline-offset:-2px;}
+
+.prototype-carousel {cursor:grab;touch-action:pan-x pan-y;}
+.prototype-carousel.carousel-dragging {cursor:grabbing;scroll-behavior:auto!important;user-select:none;-webkit-user-select:none;}
+/* Section rhythm after moving tasks below services; use the archived spacing scale. */
+body[data-screen="benefits"] [data-test-id="gamification-carousel-container"] {
+  margin-top:var(--newclick-marketplace-ui-gap-32);
+}
+/* Content already ends with a 32px spacer. Reserve only the fixed navbar height. */
+body[data-screen="benefits"] [data-test-id="fakeFooter"] {
+  padding-bottom:64px;
+}
+/* Horizontal carousels must not create a nested vertical scroll area. */
+.swiper { overflow-y:hidden!important; }
+/* The sticky section tabs share the archived app's 600px desktop canvas. */
+body[data-screen="benefits"] .R0SUO.Osj0W {
+  max-width:600px;
+  margin-inline:auto;
+}
+
+/* Bank Swiper used JS dragging and pan-y; our offline carousels scroll natively. */
+.swiper.swiper-horizontal,
+.prototype-carousel { touch-action:pan-x pan-y!important; }
+/* The archived balance tooltip left a transparent 1000px hit area outside the card. */
+[data-test-id="balance-carousel"] .Nyzf5 { display:none; }
+
+/* Swiper owns transforms and pointer gestures; native rows retain regular scrolling. */
+.swiper.prototype-swiper { overflow:hidden!important; touch-action:pan-y!important; }
+.swiper.prototype-swiper > .swiper-wrapper { will-change:transform; }
+
+/* Official Alfa PrimaryTabListMobile; archived typography and Button. */
+.prototype-task-tabs { padding-top:16px; --font-family-system:"Alfa Interface Sans",system-ui,sans-serif; }
+body .prototype-task-tabs .prototype-alfa-tablist { display:flex; justify-content:center; }
+body .prototype-alfa-tablist button { font-family:"Alfa Interface Sans",system-ui,sans-serif; }
+.prototype-task-tabs [role="tab"]:focus-visible,
+[data-tasks-return]:focus-visible { outline:2px solid #ef3124; outline-offset:3px; }
+#tasks-panel[hidden], #rewards-panel[hidden] { display:none; }
+.prototype-rewards-empty { display:flex; flex-direction:column; align-items:center; text-align:center; padding:48px 16px 16px; gap:24px; min-height:calc(100dvh - 180px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px)); }
+.prototype-rewards-placeholder { width:160px; height:160px; border-radius:16px; background:var(--newclick-marketplace-ui-color-light-bg-secondary, #f2f3f5); }
+.prototype-rewards-empty h2 { margin:0; }
+
+.prototype-rewards-empty [data-tasks-return] { margin-top:auto; }
+
+.shopping-summary {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 184px;
+  padding: 16px;
+  border-radius: 24px;
+  background: #e4f0ff;
+  color: #030306e0;
+}
+/* Collapsed task card, Figma 169:190. */
+.shopping-summary-head {
+  position: relative;
+  padding-inline-end: 116px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.shopping-summary-head .jqERq { position: absolute; width: 108px; right: -8px; top: -24px; }
+#benefits-tasks [data-test-id="gamification-carousel-title"] {
+  position: relative;
+  z-index: 2;
+}
+/* Extend the clipping area upward without adding space above the task cards. */
+#benefits-tasks .swiper {
+  --task-artwork-overhang: 28px;
+  margin-top: calc(-1 * var(--task-artwork-overhang));
+  padding-top: var(--task-artwork-overhang);
+}
+#benefits-tasks #transport-task-preview .shopping-summary-head .jqERq { top: -44px; }
+.shopping-summary-title { font-size: 26px; line-height: 32px; font-weight: 500; }
+.shopping-summary-target { margin-top: 8px; color: var(--newclick-marketplace-ui-color-light-text-secondary, #0404138c); }
+.shopping-summary-footer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr);
+  align-items: start;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 12px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.shopping-summary-date { display: flex; align-items: center; gap: 4px; color: var(--newclick-marketplace-ui-color-light-text-secondary, #0404138c); }
+.shopping-summary-date svg { flex: none; width: 16px; height: 16px; }
+.shopping-summary-track {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+  height: 24px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #0f19371a;
+}
+.shopping-summary-track::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0;
+  border-radius: 8px;
+  background: #0cc44d;
+}
+.shopping-summary-track::after,
+.shopping-summary-segments-finish > span:last-child::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: 56px;
+  background: conic-gradient(#0f19371a 25%, transparent 0 50%, #0f19371a 0 75%, transparent 0) 0 0 / 24px 24px;
+  mask-image: linear-gradient(to right, transparent, #000);
+}
+.shopping-summary-percent { white-space: nowrap; position: relative; z-index: 1; padding-left: 8px; color: var(--newclick-marketplace-ui-color-light-text-secondary-shade-20, #03030fa3); }
+
+.shopping-summary-standard { background: rgba(38, 55, 88, .06); }
+.shopping-summary-segments { display: flex; flex: 1; min-width: 0; gap: 4px; height: 24px; }
+.shopping-summary-segments > span { flex: 1; border-radius: 8px; background: #0f19371a; }
+.shopping-summary-count { display: grid; place-items: center; flex: 1; min-height: 24px; border-radius: 8px; background: #0f19371a; color: #030306e0; }
+
+.shopping-summary-segments-finish > span:last-child { position: relative; overflow: hidden; }
+.shopping-summary-segments-finish > span:last-child::after { width: 65%; background-position: right top; }
+
+.shopping-summary-segments-finish > span {
+  display: grid;
+  place-items: center start;
+  padding-inline-start: 8px;
+  box-sizing: border-box;
+  min-width: 0;
+  color: #050b2c2e; /* Alfa DS: text-disabled */
+}
+.shopping-summary-segments-finish > span > b {
+  position: relative;
+  z-index: 1;
+  font-weight: 400;
+}
+
+.shopping-summary-amount { position: relative; z-index: 1; display: flex; justify-content: space-between; width: 100%; padding-inline: 8px; color: var(--newclick-marketplace-ui-color-light-text-secondary-shade-20, #03030fa3); white-space: nowrap; }
+
+@media (max-width: 359px) {
+  .shopping-summary { min-height: 224px; }
+}
+
+[data-shopping-summary] .shopping-summary-start:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+[data-shopping-summary] [hidden] { display: none; }
+[data-shopping-summary] .shopping-summary-head { margin-bottom: 12px; }
+[data-shopping-summary] .jqERq { width: 108px; }
+
+[data-shopping-summary] .shopping-summary-footer {
+  padding-top: 0;
+  align-items: center;
+  min-height: 32px;
+}
+
+[data-shopping-summary] .shopping-summary-track {
+  height: 32px;
+}
+
+[data-shopping-summary] .shopping-summary-start {
+  justify-self: end;
+}
+
+/* Partner announcement: preserve archived banner geometry and 14/20 typography. */
+.prototype-events-banner {
+  display:grid;
+  grid-template-columns:48px minmax(0, 1fr);
+  align-items:stretch;
+  gap:var(--gap-12, 12px);
+  padding:var(--gap-16, 16px) var(--gap-20, 20px);
+  border-radius:var(--gap-24, 24px);
+  background:var(--color-light-transparent-default-hover, rgba(38, 55, 88, .06));
+  color:var(--color-light-text-primary, rgba(3, 3, 6, .88));
+}
+.prototype-events-art { position:relative; min-height:48px; }
+.prototype-events-gift { position:absolute; inset:0; width:100%; height:100%; overflow:hidden; }
+.prototype-events-copy { min-width:0; align-self:center; }
+.prototype-events-copy h2, .prototype-events-copy p { margin:0; }
+.prototype-events-copy p { color:var(--color-light-text-secondary, rgba(4, 4, 19, .55)); }
+
+/* Existing 48px artwork slot, 12px gap and archived Alfa button. */
+.prototype-events-brand { display:block; width:48px; height:48px; object-fit:contain; border-radius:12px; }
+.prototype-events-reminder { --font-family-system:"Alfa Interface Sans",system-ui,sans-serif; grid-column:1 / -1; min-width:0; max-width:100%; }
+.prototype-events-reminder:empty { display:none; }
+/* Official 24px icons crossfade inside the unchanged secondary ButtonMobile. */
+.prototype-reminder-icons { display:grid; width:24px; height:24px; }
+.prototype-reminder-icons svg { grid-area:1 / 1; transition:opacity 220ms ease; }
+.prototype-reminder-check { opacity:0; }
+.is-confirmed .prototype-reminder-bell { opacity:0; }
+.is-confirmed .prototype-reminder-check { opacity:1; }
+.prototype-events-reminder { height:32px; opacity:1; transition:height 220ms ease, opacity 220ms ease; }
+.prototype-events-reminder.is-exiting { height:0; opacity:0; overflow:hidden; pointer-events:none; }
+.prototype-events-banner { transition:row-gap 220ms ease; }
+.prototype-events-banner:has(.prototype-events-reminder.is-exiting) { row-gap:0; }
+@media (prefers-reduced-motion:reduce) {
+  .prototype-reminder-icons svg, .prototype-events-reminder, .prototype-events-banner { transition:none; }
+}
+
+/* Balance digits and currency share the archived amount typography. */
+[data-test-id="cashback-balance-amount-text_content"] {
+  font-size:20px;
+  font-weight:600;
+  line-height:24px;
+}
+[data-test-id="cashback-balance-amount-text_content"] * {
+  font-family:inherit;
+  font-size:inherit;
+  font-weight:inherit;
+  line-height:inherit;
+}

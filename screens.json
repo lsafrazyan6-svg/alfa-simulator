@@ -1,0 +1,57 @@
+[
+  {
+    "id": "home",
+    "title": "Главная",
+    "file": "index.html"
+  },
+  {
+    "id": "benefits",
+    "title": "Выгода",
+    "file": "benefits.html"
+  },
+  {
+    "id": "history",
+    "title": "История",
+    "file": "history.html"
+  },
+  {
+    "id": "tasks",
+    "title": "Задания и награды",
+    "file": "tasks.html"
+  },
+  {
+    "id": "task-shopping",
+    "title": "Задание на покупки",
+    "file": "task-shopping.html"
+  },
+  {
+    "id": "task-fastfood",
+    "title": "Кэшбэк на фастфуд",
+    "file": "task-fastfood.html"
+  },
+  {
+    "id": "task-categories",
+    "title": "Задание на категории",
+    "file": "task-categories.html"
+  },
+  {
+    "id": "task-balance",
+    "title": "Задание на остаток",
+    "file": "task-balance.html"
+  },
+  {
+    "id": "cashback",
+    "title": "Выбор категорий",
+    "file": "cashback.html"
+  },
+  {
+    "id": "cashback-selected",
+    "title": "Выбранная категория",
+    "file": "cashback-selected.html"
+  },
+  {
+    "id": "cashback-done",
+    "title": "Подтверждение",
+    "file": "cashback-done.html"
+  }
+]

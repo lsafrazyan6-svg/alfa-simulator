@@ -1,0 +1,263 @@
+/* Alfa archived DS: 721e94d939a79e78a860.css. Composition: Figma 129:10194. */
+:root{--alfa-accent-primary:#ef3124;--alfa-base-bg-primary:#fff;--alfa-text-primary:#030306e0;--alfa-text-primary-inverted:#fffffff0;--alfa-text-positive:#0d9336;--alfa-graphic-primary:#212124;--alfa-graphic-positive:#0cc44d;--alfa-graphic-positive-shade-10:#0bb045;--alfa-graphic-positive-shade-30:#088936;--alfa-status-muted-negative:#ffebeb;--alfa-progress-track:#050b2c2e;--alfa-progress-fill:#a1dba8;--alfa-radius-progress:8px;--alfa-finish-width:48px;--alfa-finish-tile:24px;}
+@font-face{font-family:"Alfa Interface Sans";src:url("assets/d01f0c2f390e7c373693.woff2") format("woff2");font-weight:400;font-display:swap}@font-face{font-family:"Alfa Interface Sans";src:url("assets/755be234d337016be4e3.woff2") format("woff2");font-weight:500;font-display:swap}@font-face{font-family:"Alfa Interface Sans";src:url("assets/266ba91e69dc335f050a.woff2") format("woff2");font-weight:700;font-display:swap}
+*{box-sizing:border-box}html{background:#eee;-webkit-text-size-adjust:100%}body{margin:0;font-family:"Alfa Interface Sans",sans-serif;color:var(--alfa-text-primary);font-size:16px;line-height:24px}button,a{font:inherit}button{cursor:pointer}p,h1,h2{margin:0}a{color:inherit}button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--alfa-accent-primary);outline-offset:4px}.shopping{max-width:600px;margin:auto;overflow:hidden;position:relative;background-color:var(--alfa-base-bg-primary);background-image:linear-gradient(to bottom, #481226 0, #a9221c 210px, #c83124 247px, #d65549 287px, #ea9890 335px, #f8d8d5 402px, var(--alfa-base-bg-primary) 468px);background-size:100% 100%;background-repeat:no-repeat;background-position:top;min-height:100dvh}.hero{position:relative;height:var(--task-hero-height, 588px);color:var(--alfa-text-primary-inverted);background:transparent}.task-header{height:56px;display:flex;align-items:center;gap:16px;padding:8px 4px}.back{display:grid;place-items:center;width:48px;height:40px;flex:none;text-decoration:none}.back svg{width:24px;height:24px}.task-header p{font-weight:500}.hero-copy{text-align:center;padding:16px 20px 0;position:relative;z-index:2}.deadline{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:12px}.deadline svg{width:24px;height:24px;flex:none}h1{font-family:inherit;font-size:32px;line-height:40px;font-weight:600;letter-spacing:-1px}.intro{max-width:353px;margin:12px auto 0;font-size:16px;line-height:24px}.reward{position:absolute;top:297px;left:50%;width:418px;height:418px;transform:translateX(-50%);mask-image:linear-gradient(#000,#00000014);-webkit-mask-image:linear-gradient(#000,#00000014)}.reward-halo{position:absolute;top:272px;left:50%;width:470px;transform:translateX(-50%);opacity:.08;filter:blur(12px)}.shopping:before{content:"";position:absolute;z-index:1;inset:322px 0 0;background:linear-gradient(to bottom, transparent, #ffffff0d 26px, #ffffff38 58px, #ffffff9c 104px, var(--alfa-base-bg-primary) 146px);pointer-events:none}.hero:before{content:"";position:absolute;top:392px;left:50%;width:420px;height:250px;transform:translateX(-50%);background:#ffd69c;opacity:.45;filter:blur(24px);border-radius:80px}.task-header{position:relative;z-index:2}.progress{position:relative;z-index:2;padding:0 20px;display:flex;flex-direction:column;gap:16px}.track{height:52px;position:relative;border-radius:var(--alfa-radius-progress);overflow:hidden;background:var(--alfa-progress-track)}.fill{width:40%;height:100%;border-radius:var(--alfa-radius-progress);background:var(--alfa-progress-fill);position:relative}.percent{position:absolute;top:8px;left:8px;font-size:20px;line-height:24px;font-weight:400;color:#fff}.finish{position:absolute;right:0;top:-4px;width:var(--alfa-finish-width);height:calc(100% + 8px);background:conic-gradient(#ffffff38 25%,#001f0924 0 50%,#ffffff38 0 75%,#001f0924 0) 0 0/var(--alfa-finish-tile) var(--alfa-finish-tile);mask-image:linear-gradient(90deg,transparent,#000);-webkit-mask-image:linear-gradient(90deg,transparent,#000)}.conditions{position:relative;z-index:2;padding:32px 20px 0;display:flex;flex-direction:column;gap:24px}h2{font-family:inherit;font-size:20px;line-height:28px;letter-spacing:normal;font-weight:600}.steps{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:24px}.step{display:flex;gap:16px;align-items:flex-start}.number{overflow:hidden;position:relative;flex:none;width:40px;height:40px;display:grid;place-items:center;border-radius:12px;background:var(--alfa-status-muted-negative);color:var(--alfa-accent-primary);font-weight:500}.step-copy{min-width:0;display:flex;flex-direction:column;gap:4px}.step-title{font-family:inherit;font-size:16px;line-height:20px;font-weight:600}.accent{color:var(--alfa-accent-primary)}.number b{position:relative;font-weight:500;z-index:1}.confetti i{position:absolute;border-radius:.8px;scale:1.3}.confetti i:nth-child(1){left:8px;top:5px;width:6px;height:6px;background:var(--alfa-accent-primary);transform:rotate(-15deg)}.confetti i:nth-child(2){left:25px;top:3px;width:6.5px;height:3px;background:var(--alfa-graphic-positive-shade-30);transform:rotate(18deg)}.confetti i:nth-child(3){left:35px;top:15px;width:5px;height:5px;background:var(--alfa-accent-primary);transform:rotate(-25deg)}.confetti i:nth-child(4){left:-2px;top:21px;width:7px;height:7px;background:var(--alfa-graphic-positive-shade-30);transform:rotate(20deg)}.confetti i:nth-child(5){left:30px;top:25px;width:3px;height:7px;background:var(--alfa-accent-primary);transform:rotate(-14deg)}.confetti i:nth-child(6){left:18px;top:32px;width:4px;height:4px;background:var(--alfa-graphic-positive-shade-30);transform:rotate(-4deg)}.rules{display:flex;align-items:center;justify-content:space-between;min-height:24px}.rules-label{border-bottom:1px solid currentColor;line-height:20px}.rules-chevron{font-size:20px}.action{display:flex;align-items:center;justify-content:center;min-height:56px;border-radius:16px;background:var(--alfa-graphic-primary);color:var(--alfa-text-primary-inverted);text-decoration:none;font-weight:500}.action:active{opacity:.85}@media(max-width:374px){h1{font-size:28px;line-height:36px}.hero-copy{padding-inline:20px}}@media(min-width:440px){.reward{width:468px;height:468px;top:268px}.hero-copy .intro{max-width:400px}}@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* Inline terms are a link, as in the accepted Figma frame. */
+.mcc-link{white-space:nowrap;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;color:inherit}
+
+/* Persistent action with reserved scroll space and iPhone safe area. */
+.sticky-action{position:fixed;z-index:5;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:600px;padding:16px 20px calc(16px + env(safe-area-inset-bottom,0px));background:var(--alfa-base-bg-primary);pointer-events:none}.sticky-action .action{margin:0;pointer-events:auto}
+
+/* NavigationBar follows Alfa Core Components: 40px row + 8px vertical padding.
+   Native shell already applies safeAreaLayoutGuide. Content starts after gap-16; title-line bottom to date-line top is 32px.
+   Progress label uses 20/28 typography + gap-16: clear space between amount line
+   and progress track is 16px, per owner request. */
+
+/* DS sources: graphic-positive-shade-30; border-radius-8; headline-system-mobile_small (20/28, 600). */
+
+.progress[hidden], .action[hidden] { display: none; }
+button.action { width: 100%; border: 0; }
+body:not(.task-started) .step-after-start,
+.task-started .step-before-start { display: none; }
+.task-started .step:first-child .step-title { text-decoration: line-through; }
+/* Alfa DS: color-light-text-secondary. */
+.task-started .step:first-child .step-title + p { color: #0404138c; }
+.progress-at-zero .fill { width: 0; }
+.progress-at-zero .percent { color: var(--alfa-text-primary); }
+.activation-status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.progress-revealing { overflow: hidden; }
+
+/* Align current amount and goal to the two ends of the track. */
+.track .percent {
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 16px;
+  white-space: nowrap;
+  font-size: 18px;
+  color: var(--alfa-text-primary);
+}
+
+/* Fade the blurred top of the illustration into the underlying artwork. */
+.reward-soft { display: none; }
+body:not(.task-started) .hero { height: 456px; }
+
+body:not(.task-started) .reward { top: 197px; width: 390px; height: 390px; }
+body:not(.task-started) .reward:not(.reward-soft) {
+  mask-image: linear-gradient(transparent 48px, #000 144px, #00000014);
+}
+.reward-halo { display: none; }
+body:not(.task-started) .hero::before { top: 292px; }
+@media (min-width: 440px) {
+  body:not(.task-started) .reward { top: 168px; width: 440px; height: 440px; }
+}
+
+body:not(.task-started) .conditions {
+  margin: 16px 20px 0;
+  padding: 16px;
+  border-radius: 24px;
+  background: #f2f3f5;
+}
+
+/* Alfa DS status-muted-alt-negative-hover and text-negative-press. */
+body:not(.task-started) .conditions .number {
+  background-color: #f9ccca;
+  color: #a6201e;
+}
+.rules {
+  position: relative;
+  z-index: 2;
+  margin: 16px 20px calc(112px + env(safe-area-inset-bottom, 0px));
+}
+.rules-label { color: var(--alfa-text-primary); }
+
+/* Keep the date below the description in both task states. */
+.hero-copy { display: flex; flex-direction: column; align-items: center; }
+.deadline {
+  gap: 8px;
+  margin: 16px 0 0;
+  padding: 6px 12px;
+  border-radius: 12px;
+  background: #ffebeb;
+  color: #831001;
+  font-size: 14px;
+  line-height: 20px;
+}
+.deadline svg { width: 16px; height: 16px; }
+
+/* Keep the artwork and its white fade in sync with the activation motion. */
+.hero { transition: height 640ms cubic-bezier(.4, 0, .2, 1); }
+.reward { transition: top 640ms cubic-bezier(.4, 0, .2, 1), width 640ms cubic-bezier(.4, 0, .2, 1), height 640ms cubic-bezier(.4, 0, .2, 1); }
+.shopping::before { transition: top 640ms cubic-bezier(.4, 0, .2, 1); }
+.task-started .shopping::before { top: 458px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero, .reward, .shopping::before { transition: none; }
+}
+
+body:is([data-screen="task-categories"], [data-screen="task-balance"], [data-screen="task-fastfood"]) .shopping {
+  overflow: clip;
+}
+
+body:is([data-screen="task-categories"], [data-screen="task-balance"], [data-screen="task-fastfood"]) .reward {
+  margin-top: -24px;
+}
+
+body .shopping .reward {
+  width: calc(100% - 2 * (20px + 8px));
+  max-width: 418px;
+  height: auto;
+}
+
+.balance-example-account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 24px;
+  background: var(--alfa-base-bg-primary);
+}
+.balance-example-details { display: grid; gap: 4px; }
+.balance-example-name { font-size: 14px; line-height: 20px; letter-spacing: -.08px; color: #0404138c; }
+.balance-example-amount { font-size: 18px; line-height: 24px; letter-spacing: -.36px; font-weight: 500; }
+.balance-example-account img { flex: none; border-radius: 6px; }
+
+body:is([data-screen="task-categories"], [data-screen="task-balance"], [data-screen="task-fastfood"]) .sticky-action {
+  position: sticky;
+  left: auto;
+  transform: none;
+  margin-top: 16px;
+}
+
+body[data-screen="task-categories"].task-started {
+  /* Reserve the same top position for the track, with the counter above it. */
+  --task-hero-height: calc(588px - 36px - 8px);
+}
+
+body[data-screen="task-categories"].task-started .conditions { padding-top: 24px; }
+
+.category-progress { gap: 8px; }
+.category-progress-count { font-weight: 600; }
+.category-progress-slots {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 6px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.category-progress-slot {
+  height: 48px;
+  border-radius: 10px;
+  background: var(--alfa-progress-track);
+}
+.ride-progress-slots {
+  position: relative;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  overflow: hidden;
+}
+.category-progress-slot:has(button),
+.category-progress-slot.is-filled { background: #dff8e5; }
+.category-progress-slot button {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: inherit;
+  background: transparent;
+}
+.category-progress-slot button[aria-expanded="true"] { box-shadow: inset 0 0 0 2px #088936; }
+.category-progress-slot img { width: 32px; height: 32px; border-radius: 8px; }
+.category-progress-tip {
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #f2f3f5;
+}
+.category-tip-title { font-weight: 600; }
+.category-tip-purchase { font-size: 14px; line-height: 20px; }
+.category-progress .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
+.category-progress-heading {
+  display: flex;
+  align-items: center;
+  min-height: 36px;
+}
+.category-progress-slot:has(.category-preview) {
+  display: grid;
+  place-items: center;
+}
+.category-preview {
+  position: relative;
+  width: 46px;
+  height: 36px;
+  pointer-events: none;
+  rotate: -8deg;
+}
+.category-preview img {
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+}
+.category-preview img:not(:first-child) { opacity: 0; }
+.category-preview span {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background: #212124;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  rotate: 17deg;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .task-started .category-preview img { animation: category-preview-cycle 8s ease infinite; }
+  .task-started .category-preview img:nth-child(2) { animation-delay: 1.6s; }
+  .task-started .category-preview img:nth-child(3) { animation-delay: 3.2s; }
+  .task-started .category-preview img:nth-child(4) { animation-delay: 4.8s; }
+  .task-started .category-preview img:nth-child(5) { animation-delay: 6.4s; }
+}
+@keyframes category-preview-cycle {
+  0%, 22%, 100% { opacity: 0; transform: translateY(3px); }
+  4%, 17% { opacity: 1; transform: translateY(0); }
+}
+
+.category-progress-slot.is-finish {
+  position: relative;
+}
+.category-progress-slot.is-finish::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: min(100%, var(--alfa-finish-width));
+  border-radius: inherit;
+  background: conic-gradient(#ffffff66 25%, #03030612 0 50%, #ffffff66 0 75%, #03030612 0) right top / var(--alfa-finish-tile) var(--alfa-finish-tile);
+  mask-image: linear-gradient(to right, transparent, #000);
+  pointer-events: none;
+}
+.category-progress-slot.is-finish button {
+  position: relative;
+}
+
+.ride-progress-slots .progress-shine { z-index: 1; }
+.ride-progress-slots .is-finish::before { z-index: 2; }

@@ -1,0 +1,56 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'"><title>Кэшбэк на фастфуд · Учебный прототип</title><link rel="stylesheet" href="page-transitions.css"><link rel="stylesheet" href="task-shopping.css?v=uniform-finish-pattern"><link rel="stylesheet" href="progress-shine.css"></head><body data-screen="task-fastfood"><main class="shopping">
+<section class="hero" aria-labelledby="task-title"><header class="task-header"><a class="back" href="tasks.html" aria-label="Назад к заданиям"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m14 5-7 7 7 7" stroke="currentColor" stroke-width="1.7"/></svg></a><p>Задания и&nbsp;награды</p></header><div class="hero-copy"><h1 id="task-title">3% кэшбэка<br>на&nbsp;фастфуд</h1><p class="intro">Оплатите 3 поездки на&nbsp;такси<br>от&nbsp;700&nbsp;₽ каждая.</p><p class="deadline"><svg
+        aria-hidden="true"
+        focusable="false"
+        fill="currentColor"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+
+    >
+        <path d="M9 14v-2H7v2h2zm0 2v2H7v-2h2zm4-4h-2v2h2v-2zm-2 4h2v2h-2v-2zm6-2v-2h-2v2h2z" />
+        <path d="M18 2h-2v2H8V2H6v2H3v16a3 3 0 003 3h12a3 3 0 003-3V4h-3V2zm1 4v2H5V6h14zM5 20V10h14v10a1 1 0 01-1 1H6a1 1 0 01-1-1z" />
+    </svg>Выполните до&nbsp;30&nbsp;ноября</p></div><img class="reward" src="assets/3356b7cb813d1b7854bf.png" alt="" aria-hidden="true"></section>
+
+<section class="progress category-progress" hidden aria-label="Прогресс задания">
+  <div class="category-progress-heading">
+    <p class="category-progress-count" role="status"><span id="ride-count">0</span> из&nbsp;3 поездок</p>
+  </div>
+  <div class="category-progress-slots ride-progress-slots" role="progressbar" aria-valuemin="0" aria-valuemax="3" aria-valuenow="0" aria-label="Поездки на такси" aria-valuetext="0 из 3 поездок">
+    <span class="progress-shine" aria-hidden="true"></span>
+    <span class="category-progress-slot" aria-hidden="true"></span>
+    <span class="category-progress-slot" aria-hidden="true"></span>
+    <span class="category-progress-slot is-finish" aria-hidden="true"></span>
+  </div>
+</section>
+<section class="conditions" aria-labelledby="conditions-title">
+  <h2 id="conditions-title">Как получить награду</h2>
+  <ol class="steps">
+    <li class="step">
+      <span class="number" aria-hidden="true">1</span>
+      <div class="step-copy">
+        <p class="step-title"><span class="step-before-start">Начните задание</span><span class="step-after-start">Начало задания</span></p>
+        <p><span class="step-before-start">Нажмите «Начать», чтобы участвовать.</span><span class="step-after-start">Вы уже начали задание. Подходящие поездки засчитываются в&nbsp;прогресс.</span></p>
+      </div>
+    </li>
+    <li class="step">
+      <span class="number" aria-hidden="true">2</span>
+      <div class="step-copy">
+        <p class="step-title">Оплатите 3 поездки на&nbsp;такси</p>
+        <p>Каждая поездка должна стоить от&nbsp;700&nbsp;₽. Оплата через&nbsp;СБП и&nbsp;по&nbsp;QR-коду не&nbsp;учитывается.</p>
+      </div>
+    </li>
+    <li class="step">
+      <span class="number confetti" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><b>3</b></span>
+      <div class="step-copy">
+        <p class="step-title">Получите 3% кэшбэка на&nbsp;фастфуд</p>
+        <p>Награда будет действовать в&nbsp;следующем месяце после выполнения задания.</p>
+      </div>
+    </li>
+  </ol>
+</section>
+<footer class="sticky-action">
+  <button class="action" type="button" id="start-task">Начать</button>
+  <a class="action" id="history-link" href="history.html" hidden>К&nbsp;покупкам</a>
+</footer>
+</main><script src="task-fastfood.js?v=ride-start-shine"></script></body></html>

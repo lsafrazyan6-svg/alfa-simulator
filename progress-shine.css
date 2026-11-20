@@ -1,0 +1,17 @@
+.progress-shine { display: none; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .progress-shine.is-shining {
+    display: block;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(105deg, transparent 35%, #ffffff85 50%, transparent 65%);
+    pointer-events: none;
+    animation: shopping-progress-shine 1.4s ease-out both;
+  }
+}
+
+@keyframes shopping-progress-shine {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(100%); }
+}
